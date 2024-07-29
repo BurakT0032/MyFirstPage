@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Ana Sayfa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #2c3e50, #bdc3c7);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #248067;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        .content {
+            text-align: center;
+            padding: 0px;
+        }
+        .content h3 {
+            color: #248067;
+        }
+        .content p {
+            color: #ffffff; /* Daha iyi okunabilirlik için metin rengini değiştirdik */
+            font-size: 1.1em;
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .image-container {
+            text-align: center;
+        }
+        .images img {
+            border-radius: 10px;
+            width: 240px; /* Genişlik artırıldı */
+            height: 160px; /* Yükseklik artırıldı */
+            object-fit: cover;
+        }
+        .image-container a {
+            background: #78BC0E;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+            display: inline-block;
+            margin-top: 10px; /* Üst boşluk eklendi */
+        }
+        .image-container a:hover {
+            background: #5a8b0a;
+        }
+        .contact {
+            color: #248067;
+        }
+        .contact a {
+            color: #f97272;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        footer {
+            text-align: center;
+            background: #248067;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SAYFAMA HOŞGELDİNİZ</h1>
+    </header>
+    
+    <div class="content">
+        <h3>HAKKIMDA</h3>
+        <p>Merhaba, ben Burak Türk. Bursa Teknik Üniversitesi Bilgisayar Mühendisliği 1. Sınıf öğrencisiyim.</p>
+        <p>Bu sayfada sizlere bazı hobilerimle ilgili bilgiler paylaştım. Resimlerin yanındaki linklere tıklayarak ulaşabilirsiniz.</p>
+        
+        <div class="images">
+            <div class="image-container">
+                <img src="images/nbafinals.jpg" alt="NBA Finals">
+                <a href="nbafinals.html">EFSANE 2016-2017 NBA FINALLERI KADROSU</a>
+            </div>
+            <div class="image-container">
+                <img src="images/movie.jpg" alt="Movies">
+                <a href="movies.html">BAZI FAVORİ FİLMLER</a>
+            </div>
+            <div class="image-container">
+                <img src="images/series.jpg" alt="Series">
+                <a href="series.html">BAZI FAVORİ DİZİLER</a>
+            </div>
+            <div class="image-container">
+                <img src="images/satranç.jpg" alt="Chess">
+                <a href="chess.html">SATRANÇ TAŞLARI VE ÖZELLİKLERİ</a>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <p>İLETİŞİM</p>
+            <p><a href="mailto:burakt0032@gmail.com">Gmail</a></p>
+            <p><a href="https://github.com/BurakT0032">Github</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Burak Türk. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

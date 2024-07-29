@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Chess Pieces Information</title>
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        td {
+            vertical-align: middle;
+            padding: 10px;
+        }
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        h1, h3 {
+            color: #78BC0E;
+            margin: 0;
+        }
+        a {
+            color: #78BC0E;
+            text-decoration: none;
+        }
+        .separator {
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .content-section {
+            display: none;
+            margin-top: 20px;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .content-section.show {
+            display: block;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td align="right"><h1><a href="#piyon" onclick="showSection('piyon')">PİYON</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/piyon1.png" title="piyon"></td>
+            </tr>
+            <tr>
+                <td align="right"><h1><a href="#at" onclick="showSection('at')">AT</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/at.png" title="at"></td>
+            </tr>
+            <tr>
+                <td align="right"><h1><a href="#fil" onclick="showSection('fil')">FİL</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/fil.png" title="fil"></td>
+            </tr>
+            <tr>
+                <td align="right"><h1><a href="#vezir" onclick="showSection('vezir')">VEZİR</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/vezir.png" title="vezir"></td>
+            </tr>
+            <tr>
+                <td align="right"><h1><a href="#kale" onclick="showSection('kale')">KALE</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/kale.png" title="kale"></td>
+            </tr>
+            <tr>
+                <td align="right"><h1><a href="#şah" onclick="showSection('şah')">ŞAH</a></h1></td>
+                <td class="separator">---------------------------------------------------------------------------------</td>
+                <td align="left"><img src="images/sah.png" title="şah"></td>
+            </tr>
+        </table>
+
+        <div id="piyon" class="content-section">
+            <h3>PİYON</h3>
+            <ul>
+                <li>Oyunda puansal değeri en düşük taştır.(1puan)</li>
+                <li>Her oyuncuda 8 adet bulunur.</li>
+                <li>Sadece ilk hareketinde iki kare ileri gitme yeteneğine sahiptir. Bu durum haricinde ise bir kare ileri gidebilir.</li>
+                <li>Bir ileri çaprazında herhangi bir taş varsa çapraz hareket ederek o taşı alabilir.</li>
+            </ul>
+            <a href="#" onclick="hideSection('piyon')">Geri dön</a>
+        </div>
+
+        <div id="at" class="content-section">
+            <h3>AT</h3>
+            <ul>
+                <li>L şeklinde hareket eder.(Çapraz olmayacak şekilde iki kare daha sonra sağa veya sola bir kare)</li>
+                <li>Her oyuncuda 2 adet bulunur.</li>
+                <li>Oyunda 3 puan değerine sahiptir.</li>
+            </ul>
+            <a href="#" onclick="hideSection('at')">Geri dön</a>
+        </div>
+
+        <div id="fil" class="content-section">
+            <h3>FİL</h3>
+            <ul>
+                <li>Sadece çapraz olacak şekilde hareket eder.</li>
+                <li>Çaprazındaki rakip taşları alabilir.</li>
+                <li>Her oyuncuda 2 adet bulunur</li>
+                <li>Oyunda 3 puan değerine sahiptir.</li>
+            </ul>
+            <a href="#" onclick="hideSection('fil')">Geri dön</a>
+        </div>
+
+        <div id="vezir" class="content-section">
+            <h3>VEZİR</h3>
+            <ul>
+                <li>Sağa sola yukarıya ve aşağıya istediği kare uzunluğu kadar hareket edebilir. Ayrıca çapraz şekilde de hareket edebilir.</li>
+                <li>Her oyuncuda 1 adet bulunur</li>
+                <li>Oyunda puansal değeri en yüksek taştır.(9 puan)</li>
+            </ul>
+            <a href="#" onclick="hideSection('vezir')">Geri dön</a>
+        </div>
+
+        <div id="kale" class="content-section">
+            <h3>KALE</h3>
+            <ul>
+                <li>Sağa sola yukarı ve aşağı istediği kare miktarınca hareket edebilir.</li>
+                <li>Her oyuncuda 2 adet bulunur.</li>
+                <li>Oyunda 5 puan değerine sahiptir.</li>
+            </ul>
+            <a href="#" onclick="hideSection('kale')">Geri dön</a>
+        </div>
+
+        <div id="şah" class="content-section">
+            <h3>ŞAH</h3>
+            <ul>
+                <li>Etrafını çevreleyen herhangi bir kareye hareket edebilir.</li>
+                <li>Her oyuncuda 1 adet bulunur.</li>
+                <li>Rakip taşlar şah çekmişse, şahı koruyacak hiçbir taş yoksa ve şah hareket edemiyorsa o oyuncu oyunu kaybetmiş demektir.</li>
+            </ul>
+            <a href="#" onclick="hideSection('şah')">Geri dön</a>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('show');
+                } else {
+                    section.classList.remove('show');
+                }
+            });
+        }
+        function hideSection(sectionId) {
+            document.getElementById(sectionId).classList.remove('show');
+        }
+    </script>
+
+    <p align="center"><a href="index.html">ANA SAYFA</a></p>
+</body>
+</html>

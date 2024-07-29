@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>NBA Finals Roster</title>
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .player {
+            position: relative;
+            width: 200px; /* Sabit genişlik */
+            height: 300px; /* Sabit yükseklik */
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .player img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: cover;
+            border: 3px solid #AE790B;
+            border-radius: 10px;
+        }
+        .player-name {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #AE790B;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 16px;
+        }
+        .footer a {
+            color: #78BC0E;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .highlight-link a {
+            color: #FF0000; /* İstediğiniz renk kodunu buraya yazın */
+        }
+        .highlight-link a:hover {
+            color: #FF4500; /* Üzerine gelindiğinde değişecek renk kodunu buraya yazın */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="team">
+            <div class="player">
+                <img src="images/jr.smith.png" alt="J.R. Smith">
+                <p class="player-name">J.R. SMITH</p>
+            </div>
+            <div class="player">
+                <img src="images/tristan.png" alt="Tristan Thompson">
+                <p class="player-name">TRISTAN THOMPSON</p>
+            </div>
+            <div class="player">
+                <img src="images/love.png" alt="Kevin Love">
+                <p class="player-name">KEVIN LOVE</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="player">
+                <img src="images/lebron.png" alt="LeBron James">
+                <p class="player-name">LeBRON JAMES</p>
+            </div>
+            <div class="player">
+                <img src="images/kyrie.png" alt="Kyrie Irving">
+                <p class="player-name">KYRIE IRVING</p>
+            </div>
+        </div>
+        <p class="highlight-link"><a href="https://www.youtube.com/watch?v=kIF8zcj_J4Y" target="_blank">Kyrie, CAVS'a Şampiyonluğu Getiren Clutch Basket</a></p>
+        <hr width="80%">
+        <div class="team">
+            <div class="player">
+                <img src="images/curry.png" alt="Stephen Curry">
+                <p class="player-name">STEPHEN CURRY</p>
+            </div>
+            <div class="player">
+                <img src="images/klay.png" alt="Klay Thompson">
+                <p class="player-name">KLAY THOMPSON</p>
+            </div>
+        </div>
+        <div class="team">
+            <div class="player">
+                <img src="images/green.png" alt="Draymond Green">
+                <p class="player-name">DRAYMOND GREEN</p>
+            </div>
+            <div class="player">
+                <img src="images/barnes.png" alt="Harrison Barnes">
+                <p class="player-name">HARRISON BARNES</p>
+            </div>
+            <div class="player">
+                <img src="images/andre.png" alt="Andre Iguodala">
+                <p class="player-name">ANDRE IGUODALA</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p><a href="index.html">ANA SAYFA</a></p>
+        </div>
+    </div>
+</body>
+</html>
